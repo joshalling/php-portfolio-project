@@ -1,0 +1,151 @@
+
+/********************
+DESKTOP
+********************/
+
+@media screen and (min-width: 720px) {
+
+
+  /********************
+  SETUP
+  ********************/
+
+  header {
+    border-bottom: 3px solid #999;
+    text-align: center;
+    height: 800px;
+  }
+
+  nav {
+    opacity: 0;
+    margin: -145px 5% 0 0;
+    padding-top: 13px;
+  }
+
+  .logo {
+    width: 235px;
+    height: 53px;
+    margin: 100px auto;
+    -webkit-transform: scale(2,2);
+    transform: scale(2,2);
+  }
+
+  path {
+    fill: #333;
+    fill-opacity: 0;
+  }
+
+  .j, .g {
+    stroke: #333;
+    stroke-width: 1;
+  }
+
+
+
+
+  /********************
+  IMPLEMENT
+  ********************/
+
+  .j {
+    -webkit-transform: translateX(95px);
+    transform: translateX(95px);
+    stroke-dasharray: 235;
+    stroke-dashoffset: 235;
+  }
+
+  .g {
+    -webkit-transform: translateX(-95px);
+    transform: translateX(-95px);
+    stroke-dasharray: 245;
+    stroke-dashoffset: 245;
+  }
+
+  .j,
+  .g {
+    -webkit-animation: dash 1.5s linear 0s, slide 0.75s 1.5s, appear 1.5s 2.5s, reappear 0.75s 4.25s;
+    animation: dash 1.5s linear 0s, slide 0.75s 1.5s, appear 1.5s 2.5s, reappear 0.75s 4.25s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+  .middle {
+    -webkit-animation: appear 1.5s 2.5s,  reappear 0.75s 4.25s;
+    animation: appear 1.5s 2.5s,  reappear 0.75s 4.25s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+
+  nav {
+    -webkit-animation: navappear 0.75s 4.25s forwards;
+    animation: navappear 0.75s 4.25s forwards;
+  }
+
+  header {
+    -webkit-animation: headheight 1s 3.5s forwards;
+    animation: headheight 1s 3.5s forwards;
+  }
+
+  .logo {
+    -webkit-animation: svgtop 1s 4s forwards;
+    animation: svgtop 1s 4s forwards;
+
+  }
+
+
+  @-webkit-keyframes dash {
+    100% {stroke-dashoffset: 0;}
+  }
+  @keyframes dash {
+    100% {stroke-dashoffset: 0;}
+  }
+
+
+  @-webkit-keyframes slide {
+    100% {-webkit-transform: translateX(0);}
+  }
+  @keyframes slide {
+    100% {transform: translateX(0);}
+  }
+
+
+  @-webkit-keyframes appear {
+    65% {fill-opacity: 1;}
+    85%,
+    100% {fill-opacity: 0;stroke-width: 0;}
+  }
+  @keyframes appear {
+    65% {fill-opacity: 1;}
+    85%,
+    100% {fill-opacity: 0;stroke-width: 0;}
+  }
+
+
+  @-webkit-keyframes headheight {
+    100% {height: 60px;}
+  }
+  @keyframes headheight {
+    100% {height: 60px;}
+  }
+
+
+  @-webkit-keyframes svgtop {
+    0%, 100% {margin-top: 5px; margin-left: 50px; -webkit-transform: scale(.6,.6);}
+  }
+  @keyframes svgtop {
+    0%, 100% {margin-top: 5px; margin-left: 50px; transform: scale(.6,.6);}
+  }
+
+
+  @-webkit-keyframes reappear {
+    100% {fill-opacity: 1;}
+  }
+  @keyframes reappear {
+    100% {fill-opacity: 1;}
+  }
+
+  @-webkit-keyframes navappear {
+    100% {opacity: 1;}
+  }@keyframes navappear {
+    100% {opacity: 1;}
+  }
+}

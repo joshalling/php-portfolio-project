@@ -1,0 +1,103 @@
+/********************
+TABLET
+********************/
+
+@media screen and (min-width: 480px) {
+	
+
+
+	/********************
+	PAGE: CONTACT
+	********************/
+
+	#primary {
+		width: 50%;
+		float: left;
+	}
+
+	#secondary {
+		width: 40%;
+		float: right;
+
+	}
+
+
+
+	/********************
+	PAGE: PORTFOLIO
+	********************/
+
+
+	#gallery li {
+		display: inline-block;
+		width: 44.5%;
+	}
+
+	#gallery li.list-head {
+		display: block;
+		padding: 0;
+	}
+}
+
+
+
+/********************
+Desktop
+********************/
+
+@media screen and (min-width: 720px) {
+	
+	/********************
+	PAGE: PORTFOLIO
+	********************/
+
+	#gallery li {
+		display: inline-block;
+		width: 28%;
+	}
+
+	#gallery li.list-head {
+		display: block;
+		padding: 0;
+	}
+
+
+
+	/********************
+	HEADER
+	********************/
+
+	#wrapper {
+		margin-top: 100px;
+	}
+
+	header {
+		position: fixed;
+		margin-top: -100px;
+		margin-bottom: 60px;
+		background-color: #fff;
+		height: 60px;
+
+	}
+
+	nav {
+		background: none;
+		border: none;
+		float: right;
+		font-size: 1.125em;
+		margin: -40px 5% 0 0;
+		text-align: right;
+		width: 45%;
+	}
+
+	.logo {
+		margin: 5px 0 0 50px;
+	}
+
+	}
+
+	h2 {
+		font-size:  0.825em;
+		padding-left: 10px;
+	}
+}
